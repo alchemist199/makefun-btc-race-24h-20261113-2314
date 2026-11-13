@@ -64,14 +64,14 @@ SYMBOL = "CBBTC"
 MAX_SLIPPAGE_BPS = 100
 
 # Parameters (see module docstring for why each is what it is).
-REV_DROP = 0.006     # reversal leg: 10-bar return must be below -0.6%
+REV_DROP = 0.007     # reversal leg: 10-bar return must be below -0.6%
 REV_UP = 3           # ... and close above the close this many bars ago
 TP_REV = 0.013       # reversal leg take-profit: +1.3% over harness cost
 HOLD_REV = 90        # reversal leg hold cap, bars
 DIP_N = 600          # dip leg reference: simple average of this many closes
 DIP_PCT = 0.01       # dip leg: close must be 1% below that average
 DIP_TURN = 8         # ... and above the close this many bars ago
-TP_DIP = 0.005       # dip leg take-profit: +0.5% over harness cost
+TP_DIP = 0.0065       # dip leg take-profit: +0.5% over harness cost
 HOLD_DIP = 72        # dip leg hold cap, bars
 
 closes = []         # CBBTC closes, in arrival order (ints, price_scale 5)
